@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+}
+
+h2 {
+    color: cyan;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid cyan;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: cyan;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    bottom: 30px;
+    font-size: 14px;
+    color: #0ff;
+}
+
+.btn {
+    background: cyan;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
